@@ -1,0 +1,243 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-family: 'Roboto', sans-serif;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+
+/* ----------------HEADER---------------- */
+header{
+    background-image: url(img/background-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    background-attachment: fixed;
+}
+
+.main-nav{
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    background-color: black;
+}
+
+.main-nav li{
+    display: inline-block;
+    margin-right: 50px;
+    list-style: none;
+}
+
+.main-nav li a{
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+} 
+
+.header-name{
+    text-align: center;
+    color: white;
+    padding-top: 250px;
+}
+
+.header-name h1{
+    font-size: 400%;
+}
+
+.icon-soccial{
+    position: absolute;
+    left: 45%;
+    bottom: 50px;
+}
+
+.icon-soccial li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.sticky{
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 900;
+    width: 100%;
+}
+
+/* ----------------SERCIVCE SECTION---------------- */
+
+section{
+    text-align: center;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+
+.servive-section{
+    background-color: black;
+    color: white;
+    padding: 200px;
+}
+
+.row .info-service{
+    padding: 50px;
+}
+
+h2::after{
+    content: " ";
+    display: block;
+    width: 50px;
+    height: 3px;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 30px;
+} 
+
+.servive-section h2::after{
+    background-color: white;
+}
+
+/* ----------------OUR WORK SECTION---------------- */ 
+.img-car{
+    position: relative;
+}
+
+.img-car img{
+    width: 437px;
+    height: 319px;
+}
+
+.ourwork-section h2::after{
+    background-color: black;
+}
+
+.ourwork{
+    text-align: center;
+    padding-left: 35px;
+    padding-right: 35px;
+}
+
+.ourwork-section p{
+    padding-bottom: 40px;
+}
+
+.info-ourwork{
+    position: absolute;
+    color: white;
+
+    /* căn lề cho chữ */
+    top: 20%;
+    left: 5%;
+    opacity: 0;
+    /* transform: translate(5%, 20%); */
+    transition: all .7s;
+}
+
+.img-car:hover img,
+.img-car:active img{
+    filter: brightness(70%) blur(0px);
+}
+
+.img-car:hover .info-ourwork,
+.img-car:active .info-ourwork{
+    /* transform: translate(5%, 20%); */
+    opacity: 1;
+}
+
+/* ----------------ABOUT US SECTION---------------- */
+
+.aboutus-section{
+    background-image: url(img/img-background-aboutus.jpg);
+    width: 100%;
+}
+
+.aboutus{
+    background-color: white;
+    padding: 30px;
+}
+
+.aboutus-section h2::after{
+    background-color: black;
+}
+
+.aboutus-p{
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+
+/* ----------------BACKGROUND SECTION---------------- */
+.background-section{
+    background-image: url(img/background-section.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+
+    background-attachment: fixed;
+}
+
+
+/* ----------------FIND US SECTION---------------- */
+.findus{
+    background-color: white;
+}
+
+input, textarea{
+    outline: none;
+    border: 1px solid black;
+    width: 80%;
+}
+
+textarea{
+    /* để mất phần gạch chéo */
+    resize: none;
+    height: 130px;
+    display: block;
+    margin-left: 32px;
+}
+
+input[type=text], input[type=email], textarea{
+    margin-bottom: 5px;
+}
+
+.input-findus button{
+    float: right;
+    margin-right: 35px;
+}
+
+.btn{
+    border-radius: 0;
+}
+
+/* ----------------FOOTER---------------- */
+
+footer{
+    background-color: rgb(22, 18, 18);
+    color: white;
+    text-align: center;
+    padding: 50px;
+}
+
+.icon li{
+    list-style: none;
+    display: inline-block;
+    padding-left: 20px;
+}
+
+
+
+/* ===================BOOK ONLINE ========================== */
+
+.info-book{
+    border: 1px solid black;
+}
